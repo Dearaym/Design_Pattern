@@ -9,7 +9,11 @@ public class Adaptateur implements InterfaceTravail{
         this.adapate = new ClasseExterne();
     }
 
-    public void m1(){System.out.println("m1 dans adapte");}
+    public void m1(){
+        System.out.println("m1 dans adapte");
+        //on peut par ex utiliser les méthodes de la classe externe pour les redéf de m1 et m2
+        this.adapate.m5();
+    }
     public void m2(){System.out.println("m2 dans adapte");}
     public String toString(){
         return "Adaptateur";
