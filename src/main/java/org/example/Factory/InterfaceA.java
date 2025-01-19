@@ -8,7 +8,7 @@ public interface InterfaceA {
     //possède une méthode de classe : la factory
     //Le type retourné est celui de l'interface pour être modulable
     //il n'y a que le core de la méthode à changer si besoin
-    public static InterfaceA factory(){
+    public static InterfaceA createInterfaceA(){
         //on décide de créer des classes concrètes A1
         return new ClasseA1();
 

@@ -19,7 +19,7 @@ public class Appli {
 
         //Application de méthode sur la liste
         for(int i=0; i<iT.size(); i++){
-            iT.get(i).m1();
+            iT.get(i).m1();                 //on peut utiliser la méthode m1 car l'adaptateur se charge d'adapter le contenu de la classe externe pour pouvoir utiliser m1
             //iT.get(i).m4(); --> m4 n'est pas connu dans interface travail car encapsulé avec l'association
         }
 
